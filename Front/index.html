@@ -1,0 +1,32 @@
+<!doctype html>
+ 
+<html>
+    <head>
+        <title>Milo</title>
+        <script src="js/WatchInputs.js"></script>
+        <script>
+          UsesJS.init({
+            uniqueId: "MyTokenOrUniqueIdentifierToTheServer",
+            // serverURL: "https://prod.getkickflip.com";
+            serverURL: "http://localhost:58888",
+            reportDelay: 20000
+          });
+        </script>
+    </head>
+    
+    <body>
+      <div style="background:red; width:80%; position:relative; left:10%;">
+        <button id="test1">INPUT BUTTON (#TEST1)</button><br/>
+        <form name="test2" id="frm1" action="" onSubmit="()=>{return false;}">
+          <input type="text" id="test2" placholder="INPUT TEXT (#TEST2)" value=""/>
+          <input type="submit" id="test3" value="SUBMIT (#TEST3)"/>
+        </form>
+        <br/><br/>
+        <div id="test4">
+          <div class="container">
+            <button>Testing CSS Path...</button>
+          </div>
+        </div>
+      </div>
+    </body>
+</html>
